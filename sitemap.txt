@@ -1,3 +1,4 @@
+http://example.com/2023/04/19/postName/
 http://example.com/interview/interviewAboutJs.html
 http://example.com/interview/interviewAboutCss.html
 http://example.com/react/learnReact.html
