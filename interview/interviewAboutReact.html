@@ -1,0 +1,99 @@
+<!DOCTYPE html><html lang="en" theme-mode="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>欢迎来到ALin的个人博客 | ALin的个人博客</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><script>var config = {"root":"/","search":{"preload":false,"activeHolder":"Enter here","blurHolder":"Search","noResult":"Data \"$0\" not found"},"code":{"codeInfo":"$0 - $1 lines","copy":"copy","copyFinish":"copied","expand":"expand"}}</script><script src="//unpkg.com/mermaid@9.2.2/dist/mermaid.min.js"></script><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lightgallery.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-zoom.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-thumbnail.css"><link rel="stylesheet" href="/css/arknights.css"><script>if (window.localStorage.getItem('theme-mode') === 'light') document.documentElement.setAttribute('theme-mode', 'light')
+if (window.localStorage.getItem('theme-mode') === 'dark') document.documentElement.setAttribute('theme-mode', 'dark')</script><style>@font-face {
+ font-family: BenderLight;
+ src: local('Bender'), url("/font/BenderLight.ttf");
+}
+@font-face {
+ font-family: 'JetBrains Mono';
+ src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}</style><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="ALin的个人博客" type="application/atom+xml">
+</head><body><div class="loading" style="opacity: 0"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><nav><div class="navBtn hide"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="Search" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">Home</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">Archives</span></a></li></ol></nav></header><article><div id="post-bg"><div id="post-title"><h1></h1></div><hr><div id="post-content"><h1 id="执行了ReactDOM-render-…-发生了什么？"><a href="#执行了ReactDOM-render-…-发生了什么？" class="headerlink" title="执行了ReactDOM.render(,…)发生了什么？"></a>执行了ReactDOM.render(<MyComponent/>,…)发生了什么？</h1><ol>
+<li>react解析组件标签，找到MyComponent组件</li>
+<li>发现组件是使用类定义的，随后new出来该类的实例，并通过该实例调用到原型上的render方法</li>
+<li>将render返回的虚拟DOM转为真实DOM，随后呈现在页面</li>
+</ol>
+<h1 id="react-vue中的key有什么作用（key的内部原理是什么？）"><a href="#react-vue中的key有什么作用（key的内部原理是什么？）" class="headerlink" title="react/vue中的key有什么作用（key的内部原理是什么？）"></a>react/vue中的key有什么作用（key的内部原理是什么？）</h1><ol>
+<li>虚拟DOM中key的作用：key是虚拟DOM对象的标识，在更新显示时显示极其重要的作用<br>当状态中数据发生变化时，react会根据新数据生成新的虚拟dom，随后react进行新旧虚拟DOM的diff比较 </li>
+</ol>
+<ul>
+<li>diff算法比较规则：<ul>
+<li>旧虚拟DOM找到了与新虚拟DOM相同的key<br>  若虚拟DOM中内容没变，直接使用之前真实的DOM<br>  若虚拟DOM中内容变了，则生成新的真实的DOM，随后替换掉页面中之前的真实DOM</li>
+<li>旧虚拟DOM没找到与新虚拟DOM相同的key<br>  根据数据创建新的真实DOM，随后渲染到页面</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>用index作为key可能会引发到问题<ul>
+<li>若对数据进行：逆序添加、逆序删除等破坏顺序操作：<br>  会产生没必要的真实DOM更新  ===&gt; 界面效果没问题，但效率低</li>
+<li>如果结构中包含输入类的DOM<br>  会产生错误DOM更新 ===&gt; 界面有问题</li>
+<li>但若是没有逆序添加、逆序删除仅用于渲染列表用于展示，index作为key没有问题</li>
+</ul>
+</li>
+<li>开发中如何选择key?<ul>
+<li>最好使用每条数据唯一标识，比如id,手机号、身份证、学号</li>
+</ul>
+</li>
+</ol>
+<h2 id="短时间内请求多次可能会报401，如何解决？"><a href="#短时间内请求多次可能会报401，如何解决？" class="headerlink" title="短时间内请求多次可能会报401，如何解决？"></a>短时间内请求多次可能会报401，如何解决？</h2><p>再写一个伪造模拟数据接口</p>
+<h2 id="Hash和history区别"><a href="#Hash和history区别" class="headerlink" title="Hash和history区别"></a>Hash和history区别</h2><h2 id="router和-route区别"><a href="#router和-route区别" class="headerlink" title="$router和$route区别"></a>$router和$route区别</h2><ul>
+<li>$route对象表示当前路由信息，包含了当前 URL 解析得到的信息。包含当前的路径，参数，query对象等。</li>
+<li>$router是VueRouter的一个对象，通过Vue.use(VueRouter)和Vue构造函数得到一个router的实例对象，这个对象中是一个全局的对象，他包含了所有的路由，包含了许多关键的对象和属性。</li>
+</ul>
+<h2 id="Link和NavLink区别"><a href="#Link和NavLink区别" class="headerlink" title="Link和NavLink区别"></a>Link和NavLink区别</h2><ul>
+<li><p>Link:<br>我们应用需要在各个页面间切换，如果使用锚点元素实现，在每次点击时，页面被重新加载，React Router提供了组件用来避免这种状况发生。当 你点击时，url会更新，组件会被重新渲染，但是页面不会重新加载<br>使用to参数来描述需要定位的页面。它的值既可是字符串，也可以是location对象（包含pathname、search、hash、与state属性）如果其值为字符串，将会被转换为location对象<br>replace(bool)：为 true 时，点击链接后将使用新地址替换掉访问历史记录里面的原地址；为 false 时，点击链接后将在原有访问历史记录的基础上添加一个新的纪录,默认为 false；</p>
+</li>
+<li><p>NavLink:<br>是的一个特定版本，会在匹配上当前的url的时候给已经渲染的元素添加参数，组件的属性有</p>
+</li>
+</ul>
+<ol>
+<li>activeClassName(string)：设置选中样式，默认值为active</li>
+<li>activeStyle(object)：当元素被选中时，为此元素添加样式</li>
+<li>exact(bool)：为true时，只有当导致和完全匹配class和style才会应用</li>
+<li>strict(bool)：为true时，在确定为位置是否与当前URL匹配时，将考虑位置</li>
+<li>pathname后的斜线</li>
+<li>isActive(func)判断链接是否激活的额外逻辑的功能<br>注意：”/”这个路径是一个“万精油”，它可以匹配任何一个，所以当路由中有这个时，可能会渲染两个组件，或者有两个选中的样式，那么如何解决呢？</li>
+<li>渲染两个组件时,可以在中添加exact,进行精准匹配</li>
+<li>有两个Navlink标签都有选中的样式时，Navlink标签也提供了上述的ecact这个属性，添加上进行精准匹配即可</li>
+</ol>
+<h2 id="HashRouter-与-BrowserRouter区别"><a href="#HashRouter-与-BrowserRouter区别" class="headerlink" title="HashRouter 与 BrowserRouter区别"></a>HashRouter 与 BrowserRouter区别</h2><ol>
+<li>底层原理不一样：</li>
+</ol>
+<ul>
+<li>BrowserRouter使用的是H5的history API，不兼容IE9及以下版本</li>
+<li>HashRouter使用的是URL的哈希值</li>
+</ul>
+<ol start="2">
+<li>path表现形式不一样</li>
+</ol>
+<ul>
+<li>BrowserRouter的路径中没有#,例如：localhost:3000/demo/test</li>
+<li>HashRouter的路径包含#,例如：localhost:3000/#/demo/test #后面无论写什么都不会作为资源发给服务器</li>
+</ul>
+<ol start="3">
+<li>刷新后对路由state参数的影响</li>
+</ol>
+<ul>
+<li>BrowserRouter没有任何影响，因为state保存在history对象中。</li>
+<li>HashRouter刷新后会导致路由state参数的丢失！！！</li>
+</ul>
+<ol start="4">
+<li>备注：HashRouter可以用于解决一些路径错误相关的问题</li>
+</ol>
+<div id="paginator"></div></div><div id="post-footer"></div></div><div class="bottom-btn"><div><a id="to-top" onClick="scrolls.scrolltop();" title="To Top" style="opacity: 0; display: none;">∧</a><a id="color-mode" onClick="colorMode.change()" title="Change Theme"></a></div></div></article><aside><div id="about"><a href="/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/1.png" alt="Logo"></a><h1 id="Dr"><a href="/">John Doe</a></h1><div id="description"><p>支持大家讨论交流</p></div></div><div id="aside-block"><div id="toc-div"><h1>Catalog</h1><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%89%A7%E8%A1%8C%E4%BA%86ReactDOM-render-%E2%80%A6-%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">1.</span> <span class="toc-text">执行了ReactDOM.render(,…)发生了什么？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#react-vue%E4%B8%AD%E7%9A%84key%E6%9C%89%E4%BB%80%E4%B9%88%E4%BD%9C%E7%94%A8%EF%BC%88key%E7%9A%84%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%EF%BC%89"><span class="toc-number">2.</span> <span class="toc-text">react&#x2F;vue中的key有什么作用（key的内部原理是什么？）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9F%AD%E6%97%B6%E9%97%B4%E5%86%85%E8%AF%B7%E6%B1%82%E5%A4%9A%E6%AC%A1%E5%8F%AF%E8%83%BD%E4%BC%9A%E6%8A%A5401%EF%BC%8C%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%EF%BC%9F"><span class="toc-number">2.1.</span> <span class="toc-text">短时间内请求多次可能会报401，如何解决？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hash%E5%92%8Chistory%E5%8C%BA%E5%88%AB"><span class="toc-number">2.2.</span> <span class="toc-text">Hash和history区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#router%E5%92%8C-route%E5%8C%BA%E5%88%AB"><span class="toc-number">2.3.</span> <span class="toc-text">$router和$route区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Link%E5%92%8CNavLink%E5%8C%BA%E5%88%AB"><span class="toc-number">2.4.</span> <span class="toc-text">Link和NavLink区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HashRouter-%E4%B8%8E-BrowserRouter%E5%8C%BA%E5%88%AB"><span class="toc-number">2.5.</span> <span class="toc-text">HashRouter 与 BrowserRouter区别</span></a></li></ol></li></ol></div><section id="total"><a id="total-archives" href="/archives"><span class="total-title">Archives Total:</span><span class="total-number">5</span></a><div id="total-tags"><span class="total-title">Tags:</span><span class="total-number">1</span></div><div id="total-categories"><span class="total-title">Categories:</span><span class="total-number">5</span></div></section></div><footer><nobr>Published with <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> Theme <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknights</a></nobr><wbr><nobr>by <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas><script src="/js/search.js"></script><script src="/js/arknights.js"></script><script src="//unpkg.com/lightgallery@2.7.1/lightgallery.min.js"></script><script src="//unpkg.com/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script><script src="//unpkg.com/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script><script src="/js/pjax.js"></script><script class="pjax-js">reset= () => {code.findCode();
+document.querySelector('.lg-container')?.remove()
+lightGallery(document.getElementById('post-bg'), {
+  plugins: [lgZoom,lgThumbnail],
+  selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
+ cacheBust: false,
+ selectors: ['title','article','#aside-block','.pjax-js'],
+ switches: {'article': Pjax.switches.sideBySide},
+ switchesOptions: {
+   'article': {
+     classNames: {
+       remove: "pjax-out",
+       add: "pjax-in"
+     }
+   }
+ }
+});
+document.addEventListener("pjax:complete", reset);reset()})</script></body></html>

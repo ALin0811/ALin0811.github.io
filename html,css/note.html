@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="en" theme-mode="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>欢迎来到ALin的个人博客 | ALin的个人博客</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><script>var config = {"root":"/","search":{"preload":false,"activeHolder":"Enter here","blurHolder":"Search","noResult":"Data \"$0\" not found"},"code":{"codeInfo":"$0 - $1 lines","copy":"copy","copyFinish":"copied","expand":"expand"}}</script><script src="//unpkg.com/mermaid@9.2.2/dist/mermaid.min.js"></script><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lightgallery.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-zoom.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-thumbnail.css"><link rel="stylesheet" href="/css/arknights.css"><script>if (window.localStorage.getItem('theme-mode') === 'light') document.documentElement.setAttribute('theme-mode', 'light')
+if (window.localStorage.getItem('theme-mode') === 'dark') document.documentElement.setAttribute('theme-mode', 'dark')</script><style>@font-face {
+ font-family: BenderLight;
+ src: local('Bender'), url("/font/BenderLight.ttf");
+}
+@font-face {
+ font-family: 'JetBrains Mono';
+ src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}</style><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="ALin的个人博客" type="application/atom+xml">
+</head><body><div class="loading" style="opacity: 0"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><nav><div class="navBtn hide"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="Search" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">Home</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">Archives</span></a></li></ol></nav></header><article><div id="post-bg"><div id="post-title"><h1></h1></div><hr><div id="post-content"><h1 id="keyframes（css3动画）"><a href="#keyframes（css3动画）" class="headerlink" title="keyframes（css3动画）"></a>keyframes（css3动画）</h1><ul>
+<li>通过在动画序列中定义关键帧的样式，来控制CSS动画序列中的步骤</li>
+<li>指定的变化时发生时使用％，或关键字“from”和“to”，等价于0％到100％</li>
+<li>0％是开头动画，100％是当动画完成。<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-keyword">@keyframes</span> mycolor &#123;<br>   <span class="hljs-number">0%</span> &#123; <span class="hljs-attribute">background-color</span>: red; &#125;<br>   <span class="hljs-number">30%</span> &#123; <span class="hljs-attribute">background-color</span>: darkblue; &#125;<br>   <span class="hljs-number">50%</span> &#123; <span class="hljs-attribute">background-color</span>: yellow; &#125;<br>   <span class="hljs-number">70%</span> &#123; <span class="hljs-attribute">background-color</span>: darkblue; &#125;<br>   <span class="hljs-number">100%</span> &#123; <span class="hljs-attribute">background-color</span>: red; &#125;<br> &#125;<br></code></pre></td></tr></table></figure>
+<h2 id="关于keyframes的属性"><a href="#关于keyframes的属性" class="headerlink" title="关于keyframes的属性"></a>关于keyframes的属性</h2></li>
+<li>animation-name：动画名称 指定了一个 @keyframes 动画，指定要使用哪一个关键帧</li>
+<li>animation-duration：动画持续时间 定义动画完成一个周期需要多少秒或毫秒</li>
+<li>animation-timing-function：动画的运动方式 指定动画将如何完成一个周期<ul>
+<li>ease;默认<ul>
+<li>ease-in;  </li>
+<li>ease-out;</li>
+<li>ease-in-out;</li>
+<li>linear;</li>
+<li>steps(数值, 定位) 定位：start/end 默认end指逐步运动</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>animation-delay：动画的延迟时间 动画什么时候开始。</li>
+<li>animation-iteration-count：动画循环次数 动画应该播放多少次，默认1<br>其值为：n（一个数字，指定播放多少次）、infinite（指定播放无限次）</li>
+<li>animation-fill-mode：结束状态 设置动画结束时盒子的状态<ul>
+<li>forwards 保持动画结束后的状态<ul>
+<li>backwards 动画结束后回到最初的状态</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>animation-direction：动画的执行顺序 动画是否应该播放完后逆向交替循环（对设置了多次播放的动画有效）<br>其值为：normal（默认值，动画正常）、reverse 反向、alternate（动画交替循环逆向运动）</li>
+<li>简写方式<br>animation: 动画执行时间 延迟时间 执行关键帧名称 运动方式 运动次数 结束状态 动画执行顺序;</li>
+</ul>
+<h1 id="onselect-与-onselectstart-都属于-JavaScript-当中的-DOM-事件"><a href="#onselect-与-onselectstart-都属于-JavaScript-当中的-DOM-事件" class="headerlink" title="onselect 与 onselectstart 都属于 JavaScript 当中的 DOM 事件"></a>onselect 与 onselectstart 都属于 JavaScript 当中的 DOM 事件</h1><h2 id="onselect"><a href="#onselect" class="headerlink" title="onselect"></a>onselect</h2><h2 id=""><a href="#" class="headerlink" title=""></a></h2><div id="paginator"></div></div><div id="post-footer"></div></div><div class="bottom-btn"><div><a id="to-top" onClick="scrolls.scrolltop();" title="To Top" style="opacity: 0; display: none;">∧</a><a id="color-mode" onClick="colorMode.change()" title="Change Theme"></a></div></div></article><aside><div id="about"><a href="/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/1.png" alt="Logo"></a><h1 id="Dr"><a href="/">John Doe</a></h1><div id="description"><p>支持大家讨论交流</p></div></div><div id="aside-block"><div id="toc-div"><h1>Catalog</h1><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#keyframes%EF%BC%88css3%E5%8A%A8%E7%94%BB%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">keyframes（css3动画）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Ekeyframes%E7%9A%84%E5%B1%9E%E6%80%A7"><span class="toc-number">1.1.</span> <span class="toc-text">关于keyframes的属性</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#onselect-%E4%B8%8E-onselectstart-%E9%83%BD%E5%B1%9E%E4%BA%8E-JavaScript-%E5%BD%93%E4%B8%AD%E7%9A%84-DOM-%E4%BA%8B%E4%BB%B6"><span class="toc-number">2.</span> <span class="toc-text">onselect 与 onselectstart 都属于 JavaScript 当中的 DOM 事件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#onselect"><span class="toc-number">2.1.</span> <span class="toc-text">onselect</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">2.2.</span> <span class="toc-text"></span></a></li></ol></li></ol></div><section id="total"><a id="total-archives" href="/archives"><span class="total-title">Archives Total:</span><span class="total-number">5</span></a><div id="total-tags"><span class="total-title">Tags:</span><span class="total-number">1</span></div><div id="total-categories"><span class="total-title">Categories:</span><span class="total-number">5</span></div></section></div><footer><nobr>Published with <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> Theme <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknights</a></nobr><wbr><nobr>by <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas><script src="/js/search.js"></script><script src="/js/arknights.js"></script><script src="//unpkg.com/lightgallery@2.7.1/lightgallery.min.js"></script><script src="//unpkg.com/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script><script src="//unpkg.com/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script><script src="/js/pjax.js"></script><script class="pjax-js">reset= () => {code.findCode();
+document.querySelector('.lg-container')?.remove()
+lightGallery(document.getElementById('post-bg'), {
+  plugins: [lgZoom,lgThumbnail],
+  selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
+ cacheBust: false,
+ selectors: ['title','article','#aside-block','.pjax-js'],
+ switches: {'article': Pjax.switches.sideBySide},
+ switchesOptions: {
+   'article': {
+     classNames: {
+       remove: "pjax-out",
+       add: "pjax-in"
+     }
+   }
+ }
+});
+document.addEventListener("pjax:complete", reset);reset()})</script></body></html>

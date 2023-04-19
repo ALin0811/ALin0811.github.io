@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>ALin的个人博客</title>
   
-  
+  <subtitle>欢迎来到ALin的个人博客</subtitle>
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-04-13T01:56:26.469Z</updated>
+  <updated>2023-04-13T05:56:34.280Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,22 +17,120 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2023/04/13/hello-world/"/>
-    <id>http://example.com/2023/04/13/hello-world/</id>
-    <published>2023-04-13T01:56:26.468Z</published>
-    <updated>2023-04-13T01:56:26.469Z</updated>
+    <title>【the front and back cover of a blog】</title>
+    <link href="http://example.com/2022/12/16/cover/"/>
+    <id>http://example.com/2022/12/16/cover/</id>
+    <published>2022-12-16T11:46:27.000Z</published>
+    <updated>2023-04-13T05:56:34.280Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p class='item-img' data-src='/images/back3.jpeg'><img src="/images/back3.jpeg" alt="alt"></p><span id="more"></span><p class='item-img' data-src='/images/back.jpeg'><img src="/images/back.jpeg" alt="alt"></p><p>人间总有一两风，填我十万八千梦</p><p class='item-img' data-src='/public/wallpaper1.jpeg'><img src="/public/wallpaper1.jpeg" alt="alt"></p><p>青春气贯长虹,勇锐盖过怯弱,进取压倒苟安</p><p class='item-img' data-src='/images/back2.jpeg'><img src="/images/back2.jpeg" alt="alt"><br>踏平山海，逐风挽浪，从南到北，春来秋往</p><p class='item-img' data-src='/images/back1.jpeg'><img src="/images/back1.jpeg" alt="alt"><br>世事如苍狗，生命终凋零，但在无常中去追求永恒与绚烂的生命伸张，却保存在我们的文化记忆里。极目不见故土，抬头却是同一片星空</p><p class='item-img' data-src='/images/back9.jpeg'><img src="/images/back9.jpeg" alt="alt"><br>Oh,Captain!My Captain!</p><p>I went to the woods because I wanted to live deliberately… I wanted to live deep and suck out all the marrow of life! To put to rout all that was not life… And not when I came to die, discover that I had not lived…　　<br>我步入丛林，因为我希望活得有意义… 我希望活得深刻，汲取生命所有的精髓！ 把非生命的一切全都击溃… 以免在我生命终结时，发现自己从来没有活过…</p><p>We don’t read and write poetry because it’s cute. We read and write poetry because we are members of the human race. And the human race is filled with passion. And medicine, law, business, engineering, these are noble pursuits and necessary to sustain life. But poetry, beauty, romance, love, these are what we stay alive for.　<br>我们读诗写诗，非为它的灵巧。我们读诗写诗，因为我们是人类的一员。而人类充满了热情。医药，法律，商业，工程，这些都是高贵的理想，并且是维生的必需条件。但是诗，美，浪漫，爱，这些才是我们生存的原因。</p><p class='item-img' data-src='/images/back10.jpeg'><img src="/images/back10.jpeg" alt="alt"><br>Some birds arent meant to be caged, thats all. Their feathers are just too brightThe Shawshank Redemption.<br>有些鸟儿是永远关不住的,因为它们的每一片羽翼上都沾满了自由的光辉<br>There is something inside you that others cant touch. Thats your solid barrier. Thats you.<br>有一些别人无法触及到的你的内在,那是你坚实的壁垒那是你。——《肖申克的救赎》<br>A strong man can only save himself, and a great man can save others.<br>坚强的人只能救赎自己,伟大的人才能拯救他人。——《肖申克的救赎》</p><p class='item-img' data-src='/images/back8.webp'><img src="/images/back8.webp" alt="alt"><br>the real death is that no one in the world remembers you<br>真正的死亡是世界再没有一个人记得你</p><p class='item-img' data-src='/images/back7.webp'><img src="/images/back7.webp" alt="alt"><br>少年不惧岁月长，彼时尚有荣光在</p><p class='item-img' data-src='/images/back4.webp'><img src="/images/back4.webp" alt="alt"><br>岁月因青春慷慨以赴而更加静好，世间因少年挺身向前而更加瑰丽。</p><p class='item-img' data-src='/images/back5.webp'><img src="/images/back5.webp" alt="alt"><br>在时间的荒野里开垦出成长的田垄，在荒芜中种出梦想的人才谱写了真正的英雄长歌</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/back3.jpeg&quot; alt=&quot;alt&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="我们乘着时代的风云，以微毫诠释盛大，且歌且舞而来" scheme="http://example.com/categories/%E6%88%91%E4%BB%AC%E4%B9%98%E7%9D%80%E6%97%B6%E4%BB%A3%E7%9A%84%E9%A3%8E%E4%BA%91%EF%BC%8C%E4%BB%A5%E5%BE%AE%E6%AF%AB%E8%AF%A0%E9%87%8A%E7%9B%9B%E5%A4%A7%EF%BC%8C%E4%B8%94%E6%AD%8C%E4%B8%94%E8%88%9E%E8%80%8C%E6%9D%A5/"/>
+    
+    
+    <category term="code" scheme="http://example.com/tags/code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>技术相关</title>
+    <link href="http://example.com/2019/11/16/technique/"/>
+    <id>http://example.com/2019/11/16/technique/</id>
+    <published>2019-11-16T02:46:27.000Z</published>
+    <updated>2023-04-17T04:02:03.334Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="vue"><a href="#vue" class="headerlink" title="vue"></a>vue</h2><h3 id="VUE-js框架是什么？为什么要学它"><a href="#VUE-js框架是什么？为什么要学它" class="headerlink" title="VUE.js框架是什么？为什么要学它"></a>VUE.js框架是什么？为什么要学它</h3><p>vue作为国人开发的一款前端框架，不仅有强大的社区支持，很多API都是中文的，学习难度相对较小<br>接收用户输入的同时，很可能要及时更新视图，比如用户输入不同的内容，页面就会相对应进行更新，点击不同的选项，显示不同的状态等交互效果。（用vue更便捷）<br><a href="/vue/aboutVue">查看更多</a></p><h1 id="Nodejs"><a href="#Nodejs" class="headerlink" title="Nodejs"></a>Nodejs</h1><h3 id="Node-js-是什么"><a href="#Node-js-是什么" class="headerlink" title="Node.js 是什么"></a>Node.js 是什么</h3><p>以下引自 Node.js 官网：<br>Node.js® is a JavaScript runtime built on Chrome’s V8 JavaScript engine.<br>  ○  不是编程语言<br>  ○  也不是框架和库<br>  ○  是一个 JavaScript 运行时（环境）<br>  ○<br>    ■ 能解析和执行 JavaScript 代码（严格来说应该是 ECMAScript 代码）<br>  ○  构建于 Chrome V8 JavaScript 引擎之上<br>  ○  为 JavaScript 提供了服务端编程的能力<br>  ○<br>    ■ 文件 IO<br>  ○<br>    ■ 网络 IO<br>  ○  从技术角度它的能力和 Java、PHP、Python、Perl、Ruby 等服务端技术类似<br><a href="/nodejs/node">查看更多</a></p><h1 id="React"><a href="#React" class="headerlink" title="React"></a>React</h1><h2 id="React-是一个用于构建用户界面的-JavaScript-库。"><a href="#React-是一个用于构建用户界面的-JavaScript-库。" class="headerlink" title="React 是一个用于构建用户界面的 JavaScript 库。"></a>React 是一个用于构建用户界面的 JavaScript 库。</h2><p>· <a href="/react/aboutReact">体验React</a><br>· <a href="/react/learnReact">学习React</a><br>· <a href="/react/redux">redux</a></p><h1 id="vue3-TypeScript"><a href="#vue3-TypeScript" class="headerlink" title="vue3+TypeScript"></a>vue3+TypeScript</h1><h2 id="Typed-JavaScript-at-Any-Scale"><a href="#Typed-JavaScript-at-Any-Scale" class="headerlink" title="Typed JavaScript at Any Scale."></a>Typed JavaScript at Any Scale.</h2><p>添加了类型系统的 JavaScript，适用于任何规模的项目。<br>以上描述是官网[1]对于 TypeScript 的定义。</p><p>它强调了 TypeScript 的两个最重要的特性——类型系统、适用于任何规模。<br>· <a href="/vue3+TypeScript/typeScript">TS</a></p><h1 id="threejs"><a href="#threejs" class="headerlink" title="threejs"></a>threejs</h1><h1 id="flutter"><a href="#flutter" class="headerlink" title="flutter"></a>flutter</h1><p><a href="/flutter/AboutFlutter">flutter框架</a></p><p><a href="/threejs/three.js">查看更多</a></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+    <summary type="html">&lt;h2 id=&quot;vue&quot;&gt;&lt;a href=&quot;#vue&quot; class=&quot;headerlink&quot; title=&quot;vue&quot;&gt;&lt;/a&gt;vue&lt;/h2&gt;&lt;h3 id=&quot;VUE-js框架是什么？为什么要学它&quot;&gt;&lt;a href=&quot;#VUE-js框架是什么？为什么要学它&quot; class=&quot;head</summary>
       
     
     
     
+    <category term="es6,vue,vue3,node,react..." scheme="http://example.com/categories/es6-vue-vue3-node-react/"/>
+    
+    
+    <category term="code" scheme="http://example.com/tags/code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>技术基础</title>
+    <link href="http://example.com/2019/02/13/baseTech/"/>
+    <id>http://example.com/2019/02/13/baseTech/</id>
+    <published>2019-02-13T07:16:47.000Z</published>
+    <updated>2023-04-13T09:51:53.998Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="jquery"><a href="#jquery" class="headerlink" title="jquery"></a>jquery</h1><p><a href="/jquery/AboutJquery">jquery</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;jquery&quot;&gt;&lt;a href=&quot;#jquery&quot; class=&quot;headerlink&quot; title=&quot;jquery&quot;&gt;&lt;/a&gt;jquery&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;/jquery/AboutJquery&quot;&gt;jquery&lt;/a&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="html,css,jquery" scheme="http://example.com/categories/html-css-jquery/"/>
+    
+    
+    <category term="code" scheme="http://example.com/tags/code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>面试相关</title>
+    <link href="http://example.com/2018/10/16/interview/"/>
+    <id>http://example.com/2018/10/16/interview/</id>
+    <published>2018-10-16T02:46:27.000Z</published>
+    <updated>2023-04-13T02:22:21.563Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="interview"><a href="#interview" class="headerlink" title="interview"></a>interview</h1><h3 id="关于JS部分-点击查看"><a href="#关于JS部分-点击查看" class="headerlink" title="关于JS部分   点击查看"></a>关于JS部分   <a href="/interview/interviewAboutJs">点击查看</a></h3><h3 id="关于VUE部分-点击查看"><a href="#关于VUE部分-点击查看" class="headerlink" title="关于VUE部分  点击查看"></a>关于VUE部分  <a href="/interview/interviewAboutVue">点击查看</a></h3><h3 id="关于HTML部分-点击查看"><a href="#关于HTML部分-点击查看" class="headerlink" title="关于HTML部分 点击查看"></a>关于HTML部分 <a href="/interview/interviewAboutHtml">点击查看</a></h3><h3 id="关于CSS部分-点击查看"><a href="#关于CSS部分-点击查看" class="headerlink" title="关于CSS部分  点击查看"></a>关于CSS部分  <a href="/interview/interviewAboutCss">点击查看</a></h3><h3 id="关于ES6部分-点击查看"><a href="#关于ES6部分-点击查看" class="headerlink" title="关于ES6部分  点击查看"></a>关于ES6部分  <a href="/interview/interviewAboutEs6">点击查看</a></h3>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;interview&quot;&gt;&lt;a href=&quot;#interview&quot; class=&quot;headerlink&quot; title=&quot;interview&quot;&gt;&lt;/a&gt;interview&lt;/h1&gt;&lt;h3 id=&quot;关于JS部分-点击查看&quot;&gt;&lt;a href=&quot;#关于JS部分-点击查看&quot; c</summary>
+      
+    
+    
+    
+    <category term="html,css,es6,js,vue,react" scheme="http://example.com/categories/html-css-es6-js-vue-react/"/>
+    
+    
+    <category term="code" scheme="http://example.com/tags/code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用代码</title>
+    <link href="http://example.com/2018/08/10/inComonUse/"/>
+    <id>http://example.com/2018/08/10/inComonUse/</id>
+    <published>2018-08-10T06:09:36.000Z</published>
+    <updated>2023-04-13T02:24:06.599Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="inComonUse"><a href="#inComonUse" class="headerlink" title="inComonUse"></a>inComonUse</h1><p><a href="/codeAlways/codeAlways">查看更多</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;inComonUse&quot;&gt;&lt;a href=&quot;#inComonUse&quot; class=&quot;headerlink&quot; title=&quot;inComonUse&quot;&gt;&lt;/a&gt;inComonUse&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;/codeAlways/codeAlways&quot;&gt;查看更多&lt;</summary>
+      
+    
+    
+    
+    <category term="allkinds of web" scheme="http://example.com/categories/allkinds-of-web/"/>
+    
+    
+    <category term="code" scheme="http://example.com/tags/code/"/>
     
   </entry>
   
