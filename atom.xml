@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-04-19T09:13:14.869Z</updated>
+  <updated>2023-04-13T05:56:34.280Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,19 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>postName</title>
-    <link href="http://example.com/2023/04/19/postName/"/>
-    <id>http://example.com/2023/04/19/postName/</id>
-    <published>2023-04-19T09:13:14.000Z</published>
-    <updated>2023-04-19T09:13:14.869Z</updated>
-    
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>【the front and back cover of a blog】</title>
@@ -55,14 +42,14 @@
     <link href="http://example.com/2019/11/16/technique/"/>
     <id>http://example.com/2019/11/16/technique/</id>
     <published>2019-11-16T02:46:27.000Z</published>
-    <updated>2023-04-17T04:02:03.334Z</updated>
+    <updated>2023-05-07T03:15:27.224Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="vue"><a href="#vue" class="headerlink" title="vue"></a>vue</h2><h3 id="VUE-js框架是什么？为什么要学它"><a href="#VUE-js框架是什么？为什么要学它" class="headerlink" title="VUE.js框架是什么？为什么要学它"></a>VUE.js框架是什么？为什么要学它</h3><p>vue作为国人开发的一款前端框架，不仅有强大的社区支持，很多API都是中文的，学习难度相对较小<br>接收用户输入的同时，很可能要及时更新视图，比如用户输入不同的内容，页面就会相对应进行更新，点击不同的选项，显示不同的状态等交互效果。（用vue更便捷）<br><a href="/vue/aboutVue">查看更多</a></p><h1 id="Nodejs"><a href="#Nodejs" class="headerlink" title="Nodejs"></a>Nodejs</h1><h3 id="Node-js-是什么"><a href="#Node-js-是什么" class="headerlink" title="Node.js 是什么"></a>Node.js 是什么</h3><p>以下引自 Node.js 官网：<br>Node.js® is a JavaScript runtime built on Chrome’s V8 JavaScript engine.<br>  ○  不是编程语言<br>  ○  也不是框架和库<br>  ○  是一个 JavaScript 运行时（环境）<br>  ○<br>    ■ 能解析和执行 JavaScript 代码（严格来说应该是 ECMAScript 代码）<br>  ○  构建于 Chrome V8 JavaScript 引擎之上<br>  ○  为 JavaScript 提供了服务端编程的能力<br>  ○<br>    ■ 文件 IO<br>  ○<br>    ■ 网络 IO<br>  ○  从技术角度它的能力和 Java、PHP、Python、Perl、Ruby 等服务端技术类似<br><a href="/nodejs/node">查看更多</a></p><h1 id="React"><a href="#React" class="headerlink" title="React"></a>React</h1><h2 id="React-是一个用于构建用户界面的-JavaScript-库。"><a href="#React-是一个用于构建用户界面的-JavaScript-库。" class="headerlink" title="React 是一个用于构建用户界面的 JavaScript 库。"></a>React 是一个用于构建用户界面的 JavaScript 库。</h2><p>· <a href="/react/aboutReact">体验React</a><br>· <a href="/react/learnReact">学习React</a><br>· <a href="/react/redux">redux</a></p><h1 id="vue3-TypeScript"><a href="#vue3-TypeScript" class="headerlink" title="vue3+TypeScript"></a>vue3+TypeScript</h1><h2 id="Typed-JavaScript-at-Any-Scale"><a href="#Typed-JavaScript-at-Any-Scale" class="headerlink" title="Typed JavaScript at Any Scale."></a>Typed JavaScript at Any Scale.</h2><p>添加了类型系统的 JavaScript，适用于任何规模的项目。<br>以上描述是官网[1]对于 TypeScript 的定义。</p><p>它强调了 TypeScript 的两个最重要的特性——类型系统、适用于任何规模。<br>· <a href="/vue3+TypeScript/typeScript">TS</a></p><h1 id="threejs"><a href="#threejs" class="headerlink" title="threejs"></a>threejs</h1><h1 id="flutter"><a href="#flutter" class="headerlink" title="flutter"></a>flutter</h1><p><a href="/flutter/AboutFlutter">flutter框架</a></p><p><a href="/threejs/three.js">查看更多</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="ES"><a href="#ES" class="headerlink" title="ES"></a>ES</h2><p>ES全称是EcmaScript,是脚本语言的规范，而平时写的JavaScript是EcmaScript的一种实现，所以ES新特性其实指的就是JavaScript的新特性<br>为什么要学习新特性？<br>· 语言简洁，功能丰富<br>· 框架开发应用<br><a href="/es6/aboutEs">查看更多</a></p><h2 id="vue"><a href="#vue" class="headerlink" title="vue"></a>vue</h2><h3 id="VUE-js框架是什么？为什么要学它"><a href="#VUE-js框架是什么？为什么要学它" class="headerlink" title="VUE.js框架是什么？为什么要学它"></a>VUE.js框架是什么？为什么要学它</h3><p>vue作为国人开发的一款前端框架，不仅有强大的社区支持，很多API都是中文的，学习难度相对较小<br>接收用户输入的同时，很可能要及时更新视图，比如用户输入不同的内容，页面就会相对应进行更新，点击不同的选项，显示不同的状态等交互效果。（用vue更便捷）<br><a href="/vue/aboutVue">查看更多</a></p><h1 id="Nodejs"><a href="#Nodejs" class="headerlink" title="Nodejs"></a>Nodejs</h1><h3 id="Node-js-是什么"><a href="#Node-js-是什么" class="headerlink" title="Node.js 是什么"></a>Node.js 是什么</h3><p>以下引自 Node.js 官网：<br>Node.js® is a JavaScript runtime built on Chrome’s V8 JavaScript engine.<br>  ○  不是编程语言<br>  ○  也不是框架和库<br>  ○  是一个 JavaScript 运行时（环境）<br>  ○<br>    ■ 能解析和执行 JavaScript 代码（严格来说应该是 ECMAScript 代码）<br>  ○  构建于 Chrome V8 JavaScript 引擎之上<br>  ○  为 JavaScript 提供了服务端编程的能力<br>  ○<br>    ■ 文件 IO<br>  ○<br>    ■ 网络 IO<br>  ○  从技术角度它的能力和 Java、PHP、Python、Perl、Ruby 等服务端技术类似<br><a href="/nodejs/node">查看更多</a></p><h3 id="express"><a href="#express" class="headerlink" title="express"></a>express</h3><p>express基于node.js平台，快速，开放，极简的web开发框架<br>与node.js中的http类似，专门用来创建web服务器的</p><ul><li>express 的本质就是一个npm上的第三方包，提供了快速创建web服务器的便捷方法</li></ul><p><a href="/nodejs/express">查看更多</a></p><h3 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h3><p>用来组织，存储和管理数据的仓库<br>数据库管理系统，简称，数据库<br>用户可以对数据库中的数据进行增删改查等操作</p><h3 id="常见的数据库分类"><a href="#常见的数据库分类" class="headerlink" title="常见的数据库分类"></a>常见的数据库分类</h3><ol><li>MySQL community不收费，enterprise收费</li><li>Oracle 收费</li><li>SQL Server 收费</li><li>Mongodb community不收费，enterprise收费<br>前三者属于传统型数据库又叫做关系型数据库或SQL数据库，三者设计理念相同，用法比较类似</li></ol><ul><li>workbench或navicat或dataGrip都可以连接数据库</li></ul><p><a href="/nodejs/mysql">查看更多</a></p><h1 id="React"><a href="#React" class="headerlink" title="React"></a>React</h1><h2 id="React-是一个用于构建用户界面的-JavaScript-库。"><a href="#React-是一个用于构建用户界面的-JavaScript-库。" class="headerlink" title="React 是一个用于构建用户界面的 JavaScript 库。"></a>React 是一个用于构建用户界面的 JavaScript 库。</h2><p>· <a href="/react/aboutReact">体验React</a><br>· <a href="/react/learnReact">学习React</a><br>· <a href="/react/redux">redux</a></p><h1 id="vue3-TypeScript"><a href="#vue3-TypeScript" class="headerlink" title="vue3+TypeScript"></a>vue3+TypeScript</h1><h2 id="Typed-JavaScript-at-Any-Scale"><a href="#Typed-JavaScript-at-Any-Scale" class="headerlink" title="Typed JavaScript at Any Scale."></a>Typed JavaScript at Any Scale.</h2><p>添加了类型系统的 JavaScript，适用于任何规模的项目。<br>以上描述是官网[1]对于 TypeScript 的定义。</p><p>它强调了 TypeScript 的两个最重要的特性——类型系统、适用于任何规模。<br>· <a href="/vue3+TypeScript/typeScript">TS</a></p><h1 id="threejs"><a href="#threejs" class="headerlink" title="threejs"></a>threejs</h1><h1 id="flutter"><a href="#flutter" class="headerlink" title="flutter"></a>flutter</h1><p><a href="/flutter/AboutFlutter">flutter框架</a></p><p><a href="/threejs/three.js">查看更多</a></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h2 id=&quot;vue&quot;&gt;&lt;a href=&quot;#vue&quot; class=&quot;headerlink&quot; title=&quot;vue&quot;&gt;&lt;/a&gt;vue&lt;/h2&gt;&lt;h3 id=&quot;VUE-js框架是什么？为什么要学它&quot;&gt;&lt;a href=&quot;#VUE-js框架是什么？为什么要学它&quot; class=&quot;head</summary>
+    <summary type="html">&lt;h2 id=&quot;ES&quot;&gt;&lt;a href=&quot;#ES&quot; class=&quot;headerlink&quot; title=&quot;ES&quot;&gt;&lt;/a&gt;ES&lt;/h2&gt;&lt;p&gt;ES全称是EcmaScript,是脚本语言的规范，而平时写的JavaScript是EcmaScript的一种实现，所以ES新特性其实指的就是</summary>
       
     
     
@@ -79,15 +66,15 @@
     <link href="http://example.com/2019/02/13/baseTech/"/>
     <id>http://example.com/2019/02/13/baseTech/</id>
     <published>2019-02-13T07:16:47.000Z</published>
-    <updated>2023-04-13T09:51:53.998Z</updated>
+    <updated>2023-04-27T09:27:18.749Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="jquery"><a href="#jquery" class="headerlink" title="jquery"></a>jquery</h1><p><a href="/jquery/AboutJquery">jquery</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="jquery"><a href="#jquery" class="headerlink" title="jquery"></a>jquery</h2><p><a href="/jquery/AboutJquery">jquery</a></p><h2 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h2><p><a href="/js/%E6%B5%8F%E8%A7%88%E5%99%A8%E8%B7%A8%E5%9F%9F%E5%8E%9F%E7%90%86">浏览器跨域原理</a><br><a href="/js/v8%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6">v8垃圾回收机制</a><br><a href="/js/js%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6">js运行机制</a><br><a href="/js/aboutAjax">ajax</a></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;jquery&quot;&gt;&lt;a href=&quot;#jquery&quot; class=&quot;headerlink&quot; title=&quot;jquery&quot;&gt;&lt;/a&gt;jquery&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;/jquery/AboutJquery&quot;&gt;jquery&lt;/a&gt;&lt;/p&gt;
-</summary>
+    <summary type="html">&lt;h2 id=&quot;jquery&quot;&gt;&lt;a href=&quot;#jquery&quot; class=&quot;headerlink&quot; title=&quot;jquery&quot;&gt;&lt;/a&gt;jquery&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;/jquery/AboutJquery&quot;&gt;jquery&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;J</summary>
       
     
     
@@ -104,14 +91,14 @@
     <link href="http://example.com/2018/10/16/interview/"/>
     <id>http://example.com/2018/10/16/interview/</id>
     <published>2018-10-16T02:46:27.000Z</published>
-    <updated>2023-04-13T02:22:21.563Z</updated>
+    <updated>2023-04-20T08:57:03.529Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="interview"><a href="#interview" class="headerlink" title="interview"></a>interview</h1><h3 id="关于JS部分-点击查看"><a href="#关于JS部分-点击查看" class="headerlink" title="关于JS部分   点击查看"></a>关于JS部分   <a href="/interview/interviewAboutJs">点击查看</a></h3><h3 id="关于VUE部分-点击查看"><a href="#关于VUE部分-点击查看" class="headerlink" title="关于VUE部分  点击查看"></a>关于VUE部分  <a href="/interview/interviewAboutVue">点击查看</a></h3><h3 id="关于HTML部分-点击查看"><a href="#关于HTML部分-点击查看" class="headerlink" title="关于HTML部分 点击查看"></a>关于HTML部分 <a href="/interview/interviewAboutHtml">点击查看</a></h3><h3 id="关于CSS部分-点击查看"><a href="#关于CSS部分-点击查看" class="headerlink" title="关于CSS部分  点击查看"></a>关于CSS部分  <a href="/interview/interviewAboutCss">点击查看</a></h3><h3 id="关于ES6部分-点击查看"><a href="#关于ES6部分-点击查看" class="headerlink" title="关于ES6部分  点击查看"></a>关于ES6部分  <a href="/interview/interviewAboutEs6">点击查看</a></h3>]]></content>
+    <content type="html"><![CDATA[<h1 id="interview"><a href="#interview" class="headerlink" title="interview"></a>interview</h1><h3 id="关于JS部分"><a href="#关于JS部分" class="headerlink" title="关于JS部分"></a>关于JS部分</h3><p>最基本必须要掌握～<br><a href="/interview/interviewAboutJs">点击查看</a></p><h3 id="关于VUE部分"><a href="#关于VUE部分" class="headerlink" title="关于VUE部分"></a>关于VUE部分</h3><p>浅背一下吧～<br><a href="/interview/interviewAboutVue">点击查看</a></p><h3 id="关于HTML部分"><a href="#关于HTML部分" class="headerlink" title="关于HTML部分"></a>关于HTML部分</h3><p>虽然HTML简单，但它的面试题真的不简单，内容超超超级多～<br><a href="/interview/interviewAboutHtml">点击查看</a></p><h3 id="关于CSS部分"><a href="#关于CSS部分" class="headerlink" title="关于CSS部分"></a>关于CSS部分</h3><p>不要小瞧css，真的好神奇～<br><a href="/interview/interviewAboutCss">点击查看</a></p><h3 id="关于ES6部分"><a href="#关于ES6部分" class="headerlink" title="关于ES6部分"></a>关于ES6部分</h3><p>ea6还是很不错的～<br><a href="/interview/interviewAboutEs6">点击查看</a></p><h3 id="关于React部分"><a href="#关于React部分" class="headerlink" title="关于React部分"></a>关于React部分</h3><p>这个也得会呀～<br><a href="/interview/interviewAboutReact">点击查看</a></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;interview&quot;&gt;&lt;a href=&quot;#interview&quot; class=&quot;headerlink&quot; title=&quot;interview&quot;&gt;&lt;/a&gt;interview&lt;/h1&gt;&lt;h3 id=&quot;关于JS部分-点击查看&quot;&gt;&lt;a href=&quot;#关于JS部分-点击查看&quot; c</summary>
+    <summary type="html">&lt;h1 id=&quot;interview&quot;&gt;&lt;a href=&quot;#interview&quot; class=&quot;headerlink&quot; title=&quot;interview&quot;&gt;&lt;/a&gt;interview&lt;/h1&gt;&lt;h3 id=&quot;关于JS部分&quot;&gt;&lt;a href=&quot;#关于JS部分&quot; class=&quot;head</summary>
       
     
     

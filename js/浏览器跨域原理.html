@@ -1,0 +1,117 @@
+<!DOCTYPE html><html lang="en" theme-mode="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>js | ALin的个人博客</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><script>var config = {"root":"/","search":{"preload":false,"activeHolder":"键入以继续","blurHolder":"数据检索","noResult":"无 $0 相关数据"},"code":{"codeInfo":"$0 - 共 $1 行","copy":"复制","copyFinish":"复制成功","expand":"展开"}}</script><script src="//unpkg.com/mermaid@9.2.2/dist/mermaid.min.js"></script><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lightgallery.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-zoom.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-thumbnail.css"><link rel="stylesheet" href="/css/arknights.css"><script>if (window.localStorage.getItem('theme-mode') === 'light') document.documentElement.setAttribute('theme-mode', 'light')
+if (window.localStorage.getItem('theme-mode') === 'dark') document.documentElement.setAttribute('theme-mode', 'dark')</script><style>@font-face {
+ font-family: BenderLight;
+ src: local('Bender'), url("/font/BenderLight.ttf");
+}
+@font-face {
+ font-family: 'JetBrains Mono';
+ src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}</style><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="ALin的个人博客" type="application/atom+xml">
+</head><body><div class="loading" style="opacity: 0"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><nav><div class="navBtn hide"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="数据检索" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">Home</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">Archives</span></a></li></ol></nav></header><article><div id="post-bg"><div id="post-title"><h1>js</h1></div><hr><div id="post-content"><h2 id="同源策略"><a href="#同源策略" class="headerlink" title="同源策略"></a>同源策略</h2><ul>
+<li>同源策略是浏览器的安全机制，当一个源的文档和另一个源的资源进行通信时，同源策略就会对这个通信做出不同程度的限制<br>同源策略对同源放行，对异源限制<br>因此限制造成的问题称之为跨域(异源)问题<h3 id="跨域"><a href="#跨域" class="headerlink" title="跨域"></a>跨域</h3>跨域问题是浏览器同源策略（请求的url地址，必须与浏览器上的url地址处于同域上）限制，当前域名的js只能读取同域下的窗口属性；<br>一个网站的网址组成包括协议名、子域名、主域名、端口号；<br>当在页面中从一个url请求数据时，若这个url的协议名、域名、端口号任意有一个不同，就会产生跨域问题。<h3 id="跨域出现的场景"><a href="#跨域出现的场景" class="headerlink" title="跨域出现的场景"></a>跨域出现的场景</h3></li>
+</ul>
+<ol>
+<li>网络通信 a元素的跳转；加载css、js、图片;ajax等等</li>
+<li>JS API window.open window.parent iframe.contentWindow等等</li>
+<li>存储 webStorage indexDB</li>
+</ol>
+<h2 id="不同场景跨域，以及每个场景中不同的跨域方式，同源策略都有不同程度的限制"><a href="#不同场景跨域，以及每个场景中不同的跨域方式，同源策略都有不同程度的限制" class="headerlink" title="不同场景跨域，以及每个场景中不同的跨域方式，同源策略都有不同程度的限制"></a>不同场景跨域，以及每个场景中不同的跨域方式，同源策略都有不同程度的限制</h2><h2 id="请求分类"><a href="#请求分类" class="headerlink" title="请求分类"></a>请求分类</h2><ol>
+<li>简单请求<br>只要同时满足</li>
+</ol>
+<ul>
+<li>请求方法是GET、POST、HEAD之一</li>
+<li>头部字段满足cors安全范围（浏览器默认自带的头部字段都是满足安全规范的，只要开发者改动或者新增头部，就不会打破此条规则）</li>
+<li>如果有Content-Type,必须是下列值中的一个<ul>
+<li>text/plain</li>
+<li>multipart/form-data</li>
+<li>application/x-www-form-urlencoded</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>预检请求<br>只要不是简单请求，均为预检请求</li>
+</ol>
+<h3 id="网络中的跨域"><a href="#网络中的跨域" class="headerlink" title="网络中的跨域"></a>网络中的跨域</h3><p>当浏览器运行页面后，会发出很多的网络请求，例如CSS、JS、图片、AJAX等等</p>
+<p>请求页面的源称之为<strong>页面源</strong>，在该页面中发出的请求称之为<strong>目标源</strong>。</p>
+<p>当页面源和目标源一致时，则为<strong>同源请求</strong>，否则为<strong>异源请求（跨域请求）</strong></p>
+<p class='item-img' data-src='http://mdrs.yuanjin.tech/img/202301121636551.png'><img src="http://mdrs.yuanjin.tech/img/202301121636551.png" alt="image-20230112163616513"></p>
+<h3 id="浏览器如何限制异源请求？"><a href="#浏览器如何限制异源请求？" class="headerlink" title="浏览器如何限制异源请求？"></a>浏览器如何限制异源请求？</h3><p>浏览器出于多方面的考量，制定了非常繁杂的规则来限制各种跨域请求，但总体的原则非常简单：</p>
+<ul>
+<li>对标签发出的跨域请求轻微限制</li>
+<li>对AJAX发出的跨域请求<strong>严厉限制</strong></li>
+</ul>
+<p class='item-img' data-src='http://mdrs.yuanjin.tech/img/202301122010888.png'><img src="http://mdrs.yuanjin.tech/img/202301122010888.png" alt="image-20230112201027855"></p>
+<h4 id="细节1-关于cookie"><a href="#细节1-关于cookie" class="headerlink" title="细节1 - 关于cookie"></a>细节1 - 关于cookie</h4><p>默认情况下，ajax的跨域请求并不会附带cookie，这样一来，某些需要权限的操作就无法进行</p>
+<p>不过可以通过简单的配置就可以实现附带cookie</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-comment">// xhr</span><br><span class="hljs-keyword">var</span> xhr = <span class="hljs-keyword">new</span> <span class="hljs-title class_">XMLHttpRequest</span>();<br>xhr.<span class="hljs-property">withCredentials</span> = <span class="hljs-literal">true</span>;<br><br><span class="hljs-comment">// fetch api</span><br><span class="hljs-title function_">fetch</span>(url, &#123;<br>  <span class="hljs-attr">credentials</span>: <span class="hljs-string">&quot;include&quot;</span><br>&#125;)<br></code></pre></td></tr></table></figure>
+
+<p>这样一来，该跨域的ajax请求就是一个<em>附带身份凭证的请求</em></p>
+<p>当一个请求需要附带cookie时，无论它是简单请求，还是预检请求，都会在请求头中添加<code>cookie</code>字段</p>
+<p>而服务器响应时，需要明确告知客户端：服务器允许这样的凭据</p>
+<p>告知的方式也非常的简单，只需要在响应头中添加：<code>Access-Control-Allow-Credentials: true</code>即可</p>
+<p>对于一个附带身份凭证的请求，若服务器没有明确告知，浏览器仍然视为跨域被拒绝。</p>
+<p>另外要特别注意的是：**对于附带身份凭证的请求，服务器不得设置 <code>Access-Control-Allow-Origin 的值为*</code>*<em>。这就是为什么不推荐使用</em>的原因</p>
+<h4 id="细节2-关于跨域获取响应头"><a href="#细节2-关于跨域获取响应头" class="headerlink" title="细节2 - 关于跨域获取响应头"></a>细节2 - 关于跨域获取响应头</h4><p>在跨域访问时，JS只能拿到一些最基本的响应头，如：Cache-Control、Content-Language、Content-Type、Expires、Last-Modified、Pragma，如果要访问其他头，则需要服务器设置本响应头。</p>
+<p><code>Access-Control-Expose-Headers</code>头让服务器把允许浏览器访问的头放入白名单，例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">Access-Control-Expose-Headers: authorization, a, b<br></code></pre></td></tr></table></figure>
+
+<p>这样JS就能够访问指定的响应头了。</p>
+<h3 id="JSONP"><a href="#JSONP" class="headerlink" title="JSONP"></a>JSONP</h3><p>在很久很久以前…并没有CORS方案</p>
+<p class='item-img' data-src='http://mdrs.yuanjin.tech/img/202301122054396.png'><img src="http://mdrs.yuanjin.tech/img/202301122054396.png" alt="image-20230112205454350"></p>
+<p>在那个年代，古人靠着非凡的智慧来解决这一问题</p>
+<p class='item-img' data-src='http://mdrs.yuanjin.tech/img/202301122056031.png'><img src="http://mdrs.yuanjin.tech/img/202301122056031.png" alt="image-20230112205613983"></p>
+<p>虽然可以解决问题，但JSONP有着明显的缺陷：</p>
+<ul>
+<li><p>仅能使用GET请求</p>
+</li>
+<li><p>容易产生安全隐患</p>
+<blockquote>
+<p>恶意攻击者可能利用<code>callback=恶意函数</code>的方式实现<code>XSS</code>攻击</p>
+</blockquote>
+</li>
+<li><p>容易被非法站点恶意调用</p>
+</li>
+</ul>
+<p><strong>因此，除非是某些特殊的原因，否则永远不应该使用JSONP</strong></p>
+<p>【总结】</p>
+<ul>
+<li>核心思想：浏览器的script、img、iframe标签是不受同源策略限制的，所以通过script标签引入一个js文件，这个js文件载入成功后会执行我们在url参数中指定的callback函数，并把我们需要的json数据作为参数传入。在服务器端，当req.params参数中带有callback属性时，则把数据作为callback的参数执行，并拼接成一个字符串后返回。</li>
+<li>优点：兼容性好，简单易用，支持浏览器与服务器双向通信</li>
+<li>缺点：只支持GET请求，且只支持跨域HTTP请求这种情况（不支持HTTPS）<br>在js中，直接用XMLHttpRequest请求不同域上的数据时，是不可以的。但在页面上引入不同域上的js脚本文件却是可以的，jsonp正是利用这个特性来实现的。</li>
+</ul>
+<h3 id="CORS请求原理"><a href="#CORS请求原理" class="headerlink" title="CORS请求原理"></a>CORS请求原理</h3><p>CORS是一个W3C标准，全称是”跨域资源共享”（Cross-origin resource sharing）。它允许浏览器向跨源服务器，发出XMLHttpRequest请求，从而克服了AJAX只能同源使用的限制。</p>
+<p>核心思想：在服务器端通过检查请求头部的origin，从而决定请求应该成功还是失败<br>response.setHeader(“Access-Control-Allo-Origin”,”<em>“) * 表示通配<br>response.setHeader(“Access-Control-Allo-Origin”,”<a href="http://127.0.0.1:5000&quot;">http://127.0.0.1:5000&quot;</a>) // 只想向某一个网页好使<br>一般这两个也加上<br>response.setHeader(“Access-Control-Allo-Headers”,”</em>“) * 表示通配<br>response.setHeader(“Access-Control-Allo-Method”,”*”) * 表示通配</p>
+<p>修改document.domain来跨子域<br>浏览器都有一个同源策略，限制其一：不能通过ajax的方法去请求不同源中的文档； 其二：浏览器中不同域的框架间不能进行js的交互操作。<br>不同的框架之间（父子或同辈），能够获取到彼此的window对象的，但不能使用获取到的window对象的属性和方法(html5中的postMessage方法是一个例外，还有些浏览器如ie6也可以使用top、parent等少数几个属性)。</p>
+<h3 id="代理"><a href="#代理" class="headerlink" title="代理"></a>代理</h3><p>CORS和JSONP均要求服务器是「自己人」</p>
+<p>那如果不是呢？</p class='item-img' data-src='http://mdrs.yuanjin.tech/img/202301122105697.png'><img src="http://mdrs.yuanjin.tech/img/202301122105697.png" alt="image-20230112210551647" style="zoom:50%;" />
+
+<p>那就找一个中间人（代理）</p>
+<p class='item-img' data-src='http://mdrs.yuanjin.tech/img/202301151333985.png'><img src="http://mdrs.yuanjin.tech/img/202301151333985.png" alt="image-20230115133326930"></p>
+<p>比如，前端小王想要请求获取王者荣耀英雄数据，但直接请求腾讯服务器会造成跨域</p>
+<p class='item-img' data-src='http://mdrs.yuanjin.tech/img/202301151337612.png'><img src="http://mdrs.yuanjin.tech/img/202301151337612.png" alt="image-20230115133732560"></p>
+<p>由于腾讯服务器不是「自己人」，小王决定用代理解决</p>
+<p class='item-img' data-src='http://mdrs.yuanjin.tech/img/202301151338609.png'><img src="http://mdrs.yuanjin.tech/img/202301151338609.png" alt="image-20230115133817554"></p>
+<h3 id="如何选择"><a href="#如何选择" class="headerlink" title="如何选择"></a>如何选择</h3><p>最重要的，是要保持<strong>生产环境和开发环境一致</strong></p>
+<p>下面是一张决策图</p>
+<p class='item-img' data-src='http://mdrs.yuanjin.tech/img/202301151453393.png'><img src="http://mdrs.yuanjin.tech/img/202301151453393.png" alt="image-20230115145335319"></p>
+<p>具体的几种场景</p>
+<p class='item-img' data-src='http://mdrs.yuanjin.tech/img/202301151506803.png'><img src="http://mdrs.yuanjin.tech/img/202301151506803.png" alt="image-20230115150610750"></p>
+<p class='item-img' data-src='http://mdrs.yuanjin.tech/img/202301151514837.png'><img src="http://mdrs.yuanjin.tech/img/202301151514837.png" alt="image-20230115151406797"></p>
+<div id="paginator"></div></div><div id="post-footer"></div></div><div class="bottom-btn"><div><a id="to-top" onClick="scrolls.scrolltop();" title="回到顶部" style="opacity: 0; display: none;">∧</a><a id="color-mode" onClick="colorMode.change()" title="切换主题"></a></div></div></article><aside><div id="about"><a href="/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/1.png" alt="Logo"></a><h1 id="Dr"><a href="/">John Doe</a></h1><div id="description"><p>支持大家讨论交流</p></div></div><div id="aside-block"><div id="toc-div"><h1>目录</h1><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8C%E6%BA%90%E7%AD%96%E7%95%A5"><span class="toc-number">1.</span> <span class="toc-text">同源策略</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B7%A8%E5%9F%9F"><span class="toc-number">1.1.</span> <span class="toc-text">跨域</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B7%A8%E5%9F%9F%E5%87%BA%E7%8E%B0%E7%9A%84%E5%9C%BA%E6%99%AF"><span class="toc-number">1.2.</span> <span class="toc-text">跨域出现的场景</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8D%E5%90%8C%E5%9C%BA%E6%99%AF%E8%B7%A8%E5%9F%9F%EF%BC%8C%E4%BB%A5%E5%8F%8A%E6%AF%8F%E4%B8%AA%E5%9C%BA%E6%99%AF%E4%B8%AD%E4%B8%8D%E5%90%8C%E7%9A%84%E8%B7%A8%E5%9F%9F%E6%96%B9%E5%BC%8F%EF%BC%8C%E5%90%8C%E6%BA%90%E7%AD%96%E7%95%A5%E9%83%BD%E6%9C%89%E4%B8%8D%E5%90%8C%E7%A8%8B%E5%BA%A6%E7%9A%84%E9%99%90%E5%88%B6"><span class="toc-number">2.</span> <span class="toc-text">不同场景跨域，以及每个场景中不同的跨域方式，同源策略都有不同程度的限制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%B7%E6%B1%82%E5%88%86%E7%B1%BB"><span class="toc-number">3.</span> <span class="toc-text">请求分类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E4%B8%AD%E7%9A%84%E8%B7%A8%E5%9F%9F"><span class="toc-number">3.1.</span> <span class="toc-text">网络中的跨域</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E5%A6%82%E4%BD%95%E9%99%90%E5%88%B6%E5%BC%82%E6%BA%90%E8%AF%B7%E6%B1%82%EF%BC%9F"><span class="toc-number">3.2.</span> <span class="toc-text">浏览器如何限制异源请求？</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%86%E8%8A%821-%E5%85%B3%E4%BA%8Ecookie"><span class="toc-number">3.2.1.</span> <span class="toc-text">细节1 - 关于cookie</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%86%E8%8A%822-%E5%85%B3%E4%BA%8E%E8%B7%A8%E5%9F%9F%E8%8E%B7%E5%8F%96%E5%93%8D%E5%BA%94%E5%A4%B4"><span class="toc-number">3.2.2.</span> <span class="toc-text">细节2 - 关于跨域获取响应头</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JSONP"><span class="toc-number">3.3.</span> <span class="toc-text">JSONP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CORS%E8%AF%B7%E6%B1%82%E5%8E%9F%E7%90%86"><span class="toc-number">3.4.</span> <span class="toc-text">CORS请求原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%90%86"><span class="toc-number">3.5.</span> <span class="toc-text">代理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9"><span class="toc-number">3.6.</span> <span class="toc-text">如何选择</span></a></li></ol></li></ol></div><section id="total"><a id="total-archives" href="/archives"><span class="total-title">文章 总数:</span><span class="total-number">5</span></a><div id="total-tags"><span class="total-title">标签:</span><span class="total-number">1</span></div><div id="total-categories"><span class="total-title">分类:</span><span class="total-number">5</span></div></section></div><footer><nobr>构建自 <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> 使用主题 <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknights</a></nobr><wbr><nobr>主题作者 <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas><script src="/js/search.js"></script><script src="/js/arknights.js"></script><script src="//unpkg.com/lightgallery@2.7.1/lightgallery.min.js"></script><script src="//unpkg.com/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script><script src="//unpkg.com/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script><script src="/js/pjax.js"></script><script class="pjax-js">reset= () => {code.findCode();
+document.querySelector('.lg-container')?.remove()
+lightGallery(document.getElementById('post-bg'), {
+  plugins: [lgZoom,lgThumbnail],
+  selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
+ cacheBust: false,
+ selectors: ['title','article','#aside-block','.pjax-js'],
+ switches: {'article': Pjax.switches.sideBySide},
+ switchesOptions: {
+   'article': {
+     classNames: {
+       remove: "pjax-out",
+       add: "pjax-in"
+     }
+   }
+ }
+});
+document.addEventListener("pjax:complete", reset);reset()})</script></body></html>
